@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Emoji styling */
+.emoji {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    top: -10vh; /* Start above the screen */
+    animation: fall linear infinite;
+}
+
+/* Falling animation effect */
+@keyframes fall {
+    from {
+        transform: translateY(-10vh) rotate(0deg);
+    }
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+/* Brighter effect when hovering over emoji */
+.emoji:hover {
+    filter: brightness(1.5);
+}
