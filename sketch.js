@@ -6,7 +6,7 @@ let allImagesLoaded = false;
 
 function preload() {
   // Thay đổi dựa theo số lượng hình ảnh Ben đang có
-  for (let i = 1; i <= 56; i++) {
+  for (let i = 1; i <= 5; i++) {
     imgPaths.push(`images/img${i}.jpg`);
   }
 }
